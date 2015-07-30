@@ -1,0 +1,205 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 81.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 160.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/Practicas"
+	],
+	"file_history":
+	[
+		"/H/Datos/Archivos .txt/Contraseñas/Contraseñas y cuentas.txt",
+		"/C/xampp/htdocs/AjaxSimpleRapido-Calc/calculadora.html",
+		"/C/xampp/htdocs/AjaxSimpleRapido-Calc/calcular.php",
+		"/C/xampp/htdocs/WebService/server.php",
+		"/C/xampp/htdocs/WebService/client.php",
+		"/C/xampp/htdocs/WebService/index.php",
+		"/C/xampp/htdocs/WebService/js/index.js",
+		"/C/xampp/htdocs/WebService/index.css",
+		"/H/Datos/Aplicaciones/Web/Conferencia/JQuery/ValidacionRegistros.js",
+		"/H/Datos/Aplicaciones/Web/Conferencia/Paginas/BuscarCodigo.php",
+		"/H/Datos/Aplicaciones/Web/RegistroUmg2015/js/scriptRegistro.js",
+		"/H/Datos/Aplicaciones/Web/RegistroUmg2015/js/script.js",
+		"/H/Datos/Colegio/Ciclo 2015/Material/Progra3erBimestre6topae/DOM/index.html",
+		"/C/xampp/htdocs/WebService/js/JQuery.js",
+		"/H/Datos/Colegio/Ciclo 2015/Material/Progra3erBimestre6topae/OperacionesBasicas/index.html",
+		"/C/xampp/htdocs/WebService/css/index.css",
+		"/C/xampp/htdocs/WB/server.php",
+		"/C/xampp/apache/conf/extra/httpd-vhosts.conf",
+		"/C/xampp/apache/conf/extra/httpd-default.conf",
+		"/C/Bootstrap/txttxt",
+		"/C/Users/PabloFelix/.homestead/Homestead.yaml",
+		"/H/Datos/Instaladores/Pro 64/SQL Server Developer 64bits/Instrucciones.txt",
+		"/H/Datos/Instaladores/Pro 64/Microsoft SQL SERVER-2012/Nombre Servidor.txt",
+		"/C/ss/Nuevo documento de texto.txt",
+		"/D/Datos/Videos/www.peliculasputlocker.net.txt",
+		"/D/Datos/Instaladores/Pro 64/Microsoft Visual Studio Ultimate 2013/Licensia.txt",
+		"/D/Datos/Archivos .txt/Contraseñas/Contraseñas y cuentas.txt"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"$resu",
+			"’",
+			"‘",
+			"’",
+			"‘"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Practicas.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 225.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

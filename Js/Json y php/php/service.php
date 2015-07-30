@@ -8,5 +8,6 @@
 			));
 	}
 
-	print_r($datos);
+	header("Content-type: application/json");
+	echo json_encode($datos);
 ?>
