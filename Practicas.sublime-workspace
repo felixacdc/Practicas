@@ -3,6 +3,46 @@
 	{
 		"selected_items":
 		[
+			[
+				"fu",
+				"function"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"error",
+				"errorspan"
+			],
+			[
+				"erro",
+				"errorinput"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"margi",
+				"margin-right"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"borde",
+				"border"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"s",
+				"sans-serif"
+			]
 		]
 	},
 	"buffers":
@@ -16,11 +56,19 @@
 	"command_palette":
 	{
 		"height": 81.0,
-		"last_filter": "install",
+		"last_filter": "Package Control: inst",
 		"selected_items":
 		[
 			[
-				"install",
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
 				"Package Control: Install Package"
 			]
 		],
@@ -28,7 +76,7 @@
 	},
 	"console":
 	{
-		"height": 160.0,
+		"height": 146.0,
 		"history":
 		[
 			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
@@ -49,37 +97,51 @@
 	],
 	"file_history":
 	[
+		"/H/Datos/Aplicaciones/Web/ProyectosU/RegistroUmg2015/paginas/connection.php",
+		"/H/Datos/Aplicaciones/Web/ProyectosU/RegistroUmg2015/js/scriptRegistro.js",
+		"/H/Datos/Aplicaciones/Web/ProyectosU/Registro2015/js/script.js",
+		"/H/Datos/Aplicaciones/Web/ProyectosU/RegistroUmg2015Web/js/scriptRegistro.js",
+		"/H/Datos/Aplicaciones/Web/ProyectosU/Conferencia2014/Css/Registro.css",
+		"/H/Datos/Aplicaciones/Web/ProyectosU/Conferencia2014/Paginas/Registrar.php",
+		"/H/Datos/Aplicaciones/Web/ProyectosU/Conferencia2014/Css/estilo.css",
+		"/H/Datos/Aplicaciones/Web/ProyectosU/Conferencia2014/index.php",
 		"/H/Datos/Archivos .txt/Contraseñas/Contraseñas y cuentas.txt",
-		"/C/xampp/htdocs/AjaxSimpleRapido-Calc/calculadora.html",
-		"/C/xampp/htdocs/AjaxSimpleRapido-Calc/calcular.php",
-		"/C/xampp/htdocs/WebService/server.php",
-		"/C/xampp/htdocs/WebService/client.php",
-		"/C/xampp/htdocs/WebService/index.php",
-		"/C/xampp/htdocs/WebService/js/index.js",
-		"/C/xampp/htdocs/WebService/index.css",
-		"/H/Datos/Aplicaciones/Web/Conferencia/JQuery/ValidacionRegistros.js",
-		"/H/Datos/Aplicaciones/Web/Conferencia/Paginas/BuscarCodigo.php",
-		"/H/Datos/Aplicaciones/Web/RegistroUmg2015/js/scriptRegistro.js",
-		"/H/Datos/Aplicaciones/Web/RegistroUmg2015/js/script.js",
-		"/H/Datos/Colegio/Ciclo 2015/Material/Progra3erBimestre6topae/DOM/index.html",
-		"/C/xampp/htdocs/WebService/js/JQuery.js",
-		"/H/Datos/Colegio/Ciclo 2015/Material/Progra3erBimestre6topae/OperacionesBasicas/index.html",
-		"/C/xampp/htdocs/WebService/css/index.css",
-		"/C/xampp/htdocs/WB/server.php",
-		"/C/xampp/apache/conf/extra/httpd-vhosts.conf",
-		"/C/xampp/apache/conf/extra/httpd-default.conf",
-		"/C/Bootstrap/txttxt",
-		"/C/Users/PabloFelix/.homestead/Homestead.yaml",
-		"/H/Datos/Instaladores/Pro 64/SQL Server Developer 64bits/Instrucciones.txt",
-		"/H/Datos/Instaladores/Pro 64/Microsoft SQL SERVER-2012/Nombre Servidor.txt",
-		"/C/ss/Nuevo documento de texto.txt",
-		"/D/Datos/Videos/www.peliculasputlocker.net.txt",
-		"/D/Datos/Instaladores/Pro 64/Microsoft Visual Studio Ultimate 2013/Licensia.txt",
-		"/D/Datos/Archivos .txt/Contraseñas/Contraseñas y cuentas.txt"
+		"/C/xampp/htdocs/MiPrimeraPaginaWeb/index.html",
+		"/C/xampp/htdocs/ProyectoDise/css/bootstrap.css",
+		"/C/xampp/htdocs/ProyectoDise/css/bootstrap.min.css",
+		"/C/xampp/htdocs/ProyectoDise/pages/login.php",
+		"/F/Software and Systems/Sublime Text 3/Sublime Text 3/Sublime Text 3/Sublime Text 3 [64 Bits]/Licencia Sublime text 3.txt",
+		"/C/xampp/htdocs/ProyectoDise/index.html",
+		"/C/xampp/htdocs/ProyectoDise/pages/login.html",
+		"/I/Cursos Web/Curso Laravel/Temas del Cursos.txt",
+		"/C/xampp/htdocs/ProyectoDise/pages/index.html",
+		"/H/Datos/Aplicaciones/Web/HerramientasDesarrolloWeb/bootstrap-master/docs/examples/dashboard/dashboard.css",
+		"/H/Datos/Instaladores/Sistemas Operativos/Windows8/Serial Windows 8.1.txt",
+		"/C/Users/PabloFelix/Downloads/Nueva carpeta/serial_de_Total_Video_converter_3.11.txt",
+		"/C/Users/PabloFelix/Downloads/Proyecto-Colegio.txt",
+		"/H/Datos/Bases De Datos/Base De Datos/FireBird/Codigo",
+		"/H/Datos/Programacion/Web/Paginas Documentaciones/Documentacion web.txt",
+		"/H/Datos/Programacion/Web/Paginas Documentaciones/sublimetext.txt",
+		"/H/Datos/Programacion/Web/Paginas Documentaciones/herramientas.txt",
+		"/H/Datos/Programacion/Web/Paginas de Aprendizaje/Cursos Web.txt",
+		"/H/Datos/Programacion/Web/Frameworks/Css.txt",
+		"/H/Datos/Programacion/Web/Ejemplos De Diseño Web/Paginas ejemplo.txt",
+		"/H/Datos/Programacion/JAVA/Java/Videos.txt",
+		"/H/Datos/Programacion/JAVA/Java/Java.txt",
+		"/H/Datos/Programacion/JAVA/Java/netbeans.txt",
+		"/H/Datos/Bases De Datos/BD/Paginas Ejemplos BD/BD/Base de datos.txt",
+		"/H/Datos/Practicas Ubuntu/Nodejs",
+		"/H/Datos/Bases De Datos/RegistroUmg2015/record.sql",
+		"/H/Datos/Practicas Ubuntu/Less",
+		"/C/xampp/apache/conf/httpd.conf",
+		"/H/Datos/Aplicaciones/literatu_conferencia(1).sql",
+		"/H/Datos/Archivos .txt/Descargar Musica.txt",
+		"/F/Datos/Archivos .txt/Contraseñas/Contraseñas y cuentas.txt",
+		"/C/Users/PabloFelix/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 26.0
 	},
 	"find_in_files":
 	{
@@ -93,11 +155,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"$resu",
-			"’",
-			"‘",
-			"’",
-			"‘"
+			"#b94a48",
+			"#e74c3c",
+			"exito",
+			"80",
+			"port 80",
+			"port"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -122,11 +185,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 26.0
 	},
 	"input":
 	{
-		"height": 36.0
+		"height": 34.0
 	},
 	"layout":
 	{
@@ -159,7 +222,7 @@
 	"project": "Practicas.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 48.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -173,12 +236,12 @@
 	},
 	"select_project":
 	{
-		"height": 500.0,
+		"height": 0.0,
 		"last_filter": "",
 		"selected_items":
 		[
 		],
-		"width": 380.0
+		"width": 0.0
 	},
 	"select_symbol":
 	{
@@ -197,7 +260,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 225.0,
+	"side_bar_width": 200.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
