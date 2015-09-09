@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"if",
+				"if	if …"
+			],
+			[
+				"sty",
+				"style	Attr"
+			],
+			[
+				"echo",
+				"echo"
+			],
+			[
+				"ech",
+				"echo"
+			],
+			[
+				"ec",
+				"echo"
+			],
+			[
 				"fu",
 				"function"
 			],
@@ -47,6 +67,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "Curso PHP & MySQL/6. Bucle While y Detener Bucles/index.php",
+			"settings":
+			{
+				"buffer_size": 192,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -56,9 +84,13 @@
 	"command_palette":
 	{
 		"height": 81.0,
-		"last_filter": "Package Control: inst",
+		"last_filter": "Package Control: insta",
 		"selected_items":
 		[
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
 			[
 				"Package Control: inst",
 				"Package Control: Install Package"
@@ -72,7 +104,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 512.0
+		"width": 413.0
 	},
 	"console":
 	{
@@ -93,10 +125,24 @@
 	},
 	"expanded_folders":
 	[
-		"/C/xampp/htdocs/Practicas"
+		"/C/xampp/htdocs/Practicas",
+		"/C/xampp/htdocs/Practicas/Curso PHP & MySQL",
+		"/C/xampp/htdocs/Practicas/Curso PHP & MySQL/1. Variables, Constantes y Tipos de datos - Parte 2",
+		"/C/xampp/htdocs/Practicas/Curso PHP & MySQL/2. Aritmeticos y Concatenar",
+		"/C/xampp/htdocs/Practicas/Curso PHP & MySQL/3. Operadores Logicos y Sentencia IF",
+		"/C/xampp/htdocs/Practicas/Curso PHP & MySQL/4. IF compacto y Sentencia Switch",
+		"/C/xampp/htdocs/Practicas/Curso PHP & MySQL/5. Incremento y Bucle FOR",
+		"/C/xampp/htdocs/Practicas/Curso PHP & MySQL/6. Bucle While y Detener Bucles"
 	],
 	"file_history":
 	[
+		"/C/Users/PabloFelix/Videos/edusoft.sql",
+		"/H/Datos/Instaladores/Pro 64/Microsoft SQL SERVER-2012/Nombre Servidor.txt",
+		"/C/Users/PabloFelix/Videos/123.ps",
+		"/C/Users/PabloFelix/Videos/script.sql",
+		"/C/xampp/htdocs/Practicas/Curso PHP & MySQL/5. Incremento y Bucle FOR/index.php",
+		"/C/xampp/htdocs/Practicas/Curso PHP & MySQL/4. IF compacto y Sentencia Switch/index.php",
+		"/C/xampp/htdocs/Practicas/Curso PHP & MySQL/3. Operadores Logicos y Sentencia IF/index.php",
 		"/H/Datos/Aplicaciones/Web/ProyectosU/RegistroUmg2015/paginas/connection.php",
 		"/H/Datos/Aplicaciones/Web/ProyectosU/RegistroUmg2015/js/scriptRegistro.js",
 		"/H/Datos/Aplicaciones/Web/ProyectosU/Registro2015/js/script.js",
@@ -155,6 +201,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"tr",
 			"#b94a48",
 			"#e74c3c",
 			"exito",
@@ -178,8 +225,37 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "Curso PHP & MySQL/6. Bucle While y Detener Bucles/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 192,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								182,
+								182
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -260,7 +336,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 200.0,
+	"side_bar_width": 140.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
