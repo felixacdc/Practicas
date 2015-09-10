@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
 				"if",
 				"if	if …"
 			],
@@ -68,10 +72,10 @@
 	"buffers":
 	[
 		{
-			"file": "Curso PHP & MySQL/6. Bucle While y Detener Bucles/index.php",
+			"file": "Curso PHP & MySQL/8. Bucle Foreach/index.php",
 			"settings":
 			{
-				"buffer_size": 192,
+				"buffer_size": 758,
 				"line_ending": "Windows"
 			}
 		}
@@ -132,10 +136,15 @@
 		"/C/xampp/htdocs/Practicas/Curso PHP & MySQL/3. Operadores Logicos y Sentencia IF",
 		"/C/xampp/htdocs/Practicas/Curso PHP & MySQL/4. IF compacto y Sentencia Switch",
 		"/C/xampp/htdocs/Practicas/Curso PHP & MySQL/5. Incremento y Bucle FOR",
-		"/C/xampp/htdocs/Practicas/Curso PHP & MySQL/6. Bucle While y Detener Bucles"
+		"/C/xampp/htdocs/Practicas/Curso PHP & MySQL/6. Bucle While y Detener Bucles",
+		"/C/xampp/htdocs/Practicas/Curso PHP & MySQL/7. Arrays Matrices Vectores en PHP",
+		"/C/xampp/htdocs/Practicas/Curso PHP & MySQL/8. Bucle Foreach"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/Practicas/Curso PHP & MySQL/7. Arrays Matrices Vectores en PHP/index.php",
+		"/C/xampp/htdocs/Practicas/Curso PHP & MySQL/7. Arrays/index.php",
+		"/C/xampp/htdocs/Practicas/Curso PHP & MySQL/6. Bucle While y Detener Bucles/index.php",
 		"/C/Users/PabloFelix/Videos/edusoft.sql",
 		"/H/Datos/Instaladores/Pro 64/Microsoft SQL SERVER-2012/Nombre Servidor.txt",
 		"/C/Users/PabloFelix/Videos/123.ps",
@@ -201,6 +210,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"x",
 			"tr",
 			"#b94a48",
 			"#e74c3c",
@@ -230,24 +240,25 @@
 			[
 				{
 					"buffer": 0,
-					"file": "Curso PHP & MySQL/6. Bucle While y Detener Bucles/index.php",
+					"file": "Curso PHP & MySQL/8. Bucle Foreach/index.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 192,
+						"buffer_size": 758,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								182,
-								182
+								433,
+								433
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
