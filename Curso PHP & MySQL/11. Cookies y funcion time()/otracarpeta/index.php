@@ -12,4 +12,7 @@ echo '<br/>';
 
 echo $_COOKIE['color'];
 
+# sirve para destruir una cookie
+setcookie('color',null,time() - 1,'/');
+
  ?>
