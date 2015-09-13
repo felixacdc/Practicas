@@ -16,6 +16,12 @@ if (isset($_POST['user']) and isset($_POST['pass'])) {
 	}elseif ($_POST['user'] == 'Felix' and  $_POST['pass'] == '12345') {
 		# algo si son correctos los datos
 		session_start();
+
+		if ($_POST['sesion'] == 1) {
+			# ini_set Establece el valor de una directiva de configuración
+			ini_set(session.cookie_lifetime, time() + (60*60*24));
+		}
+
 		$_SESSION['usuario'] = $_POST['user'];
 		header('location: accedido.php');
 	}else{

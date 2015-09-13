@@ -29,7 +29,7 @@
 		<input type="text" name="user"><br/>
 		<label for="">Contraseña</label>
 		<input type="text" name="pass"><br/>
-		<label for=""><input type="checkbox" name="sesion" value="1"></label>
+		<label for=""><input type="checkbox" name="sesion" value="1"> Deseo recordar mis datos.</label><br/>
 		<input type="submit" value="Clickame aqui Felix">
 	</form>
 </body>
