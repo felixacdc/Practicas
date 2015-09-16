@@ -1,0 +1,7 @@
+Comandos utilizados:
+
+sudo add-apt-repository ppa:webupd8team/sublime-text-3
+
+sudo apt-get update //verificar que el repositorio que acabamos de añadir no dañe el sistema
+
+sudo apt-get install sublime-text-installer

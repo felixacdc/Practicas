@@ -1,0 +1,8 @@
+extencion rar:
+1. instalar winrar 
+	sudo apt-get install rar
+2. rar x archivo.rar
+
+extencion zip:
+1. unzip archivo.zip
+

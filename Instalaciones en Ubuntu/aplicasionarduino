@@ -1,0 +1,21 @@
+1)entramos a htdoc
+
+para instalar git:
+sudo apt-get install git
+
+clonar el proyecto:
+git clone copiar la direccion del repositorio en git
+
+instalar johnny-five,socket.io,expres (yoel ya las definio en le proyecto):
+1)entrar a carpeta led-scket:
+cd led-socket
+2)instalar componentes mencionados:
+npm install
+
+ejecutar la aplicacion:
+node bin/www
+
+la aplicacion corre en el puerto 3001:
+localhost:3001
+
+

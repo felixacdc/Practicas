@@ -1,0 +1,8 @@
+############ SINTAXIS DE SNIPPET ############
+<snippet> 
+<content><![CDATA[
+$this -> ${1};
+]]></content>
+<tabTrigger>th</tabTrigger>  
+</snippet>
+### NOTA: la tecla para salvar un signo es la contra diagonal \

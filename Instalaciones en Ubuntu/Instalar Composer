@@ -1,0 +1,6 @@
+para instalar composer primero se instala curl:
+1. curl -sS https://getcomposer.org/installer | php
+2. mv composer.phar /bin/composer //lo movemos para que se pueda usar en cualquier parte
+
+para verificar si se instalo se escribe:
+1. composer

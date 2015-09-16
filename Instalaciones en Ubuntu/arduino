@@ -1,0 +1,22 @@
+instalar programa de arduino:
+tar -zxvf nombre del archivo y extencion
+
+entrar a la carpeta creada al descomprimir el archivo:
+cd /home/felix/escritorio/carpeta
+
+configurar el programa:
+./nombre de archivo a compilar con extencion script en shell
+
+
+despues de instalarlo:
+ir al directorio de la carpeta donde esta nuestro proyecto.
+cd /opt/lampp/htdocs/carpeta
+
+instalar la libreria johnny-five:
+npm install johnny-five
+
+ejecuta el programa para mandarlo al arduino:
+node led.js
+
+
+

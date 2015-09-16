@@ -1,0 +1,5 @@
+1. sudo su
+2. apt-get install curl
+
+despues php5:
+apt-get install php5-cli

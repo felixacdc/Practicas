@@ -1,0 +1,21 @@
+npm install --no-bin-link less
+
+instalar less:
+sudo apt-get install node-less
+
+compilar less:
+lessc nombre.less nombre.css
+
+compilar less comprimido:
+lessc -x nombre.less nombre.css
+
+aplicar less a sintaxis de sublime:
+1)ctr+shif+p
+2)escribir install package
+3)enter
+4)escribir less
+5)enter
+6)ctr+shif+p
+7)escribir les
+
+

@@ -1,0 +1,7 @@
+ls => listar todos los componentes de directorio
+pwd => ver la uvicacion actual
+cd => lleva a directorio rais
+touch nombreyextencioncion => crear un archivo
+nombreprograma -v => muestra la vercion del programa
+
+

@@ -1,0 +1,13 @@
+Antes de empezar a usar el xampp y crear proyectos tenemos que cambiar los permisos de acceso del fichero htdocs:
+
+1) cd /opt/lampp
+2) sudo chmod 777 htdocs
+
+Correr Xampp:
+1) sudo su
+2) /opt/lampp/lampp start
+
+Poner Stop a Xampp:
+1) sudo su
+2) /opt/lampp/lampp stop
+

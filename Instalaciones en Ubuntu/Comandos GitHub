@@ -1,0 +1,31 @@
+### INFORMACION SOBRE MI CUENTA DE GITHUB ###
+user name: felixacdc
+password: 2000acdc
+email: pfmata01@gmail.com
+
+### INSTALACION DE GIT ###
+sudo apt-get install git-core
+
+### AGREGAR CUENTA DE EMAIL GITHUB GLOBAL ###
+git config --global user.email "you@example.com"
+
+### AGREGAR NOMBRE DE USUARIO GITHUB GLOBAL ###
+git config --global user.name "your name"
+
+### CLONAR UN REPOSITORIO ###
+git clone https://github.com/felixacdc/Practicas.git
+
+### ACTUALIZAR NUESTRA COPIA LOCAL DEL REPOSITORIO ###
+git pull https://github.com/nombre_de_repo/
+
+### VER LOS CAMBIOS PENDIENTES DE SUBIR A GITHUB ###
+git status
+
+### PARA AÑADIR LOS CAMBIOS AL REPOSITORIO ###
+git add .
+
+### HACER COMMIT (TAMBIEN SE LE LLAMA ETIQUETAR LOS CAMBIOS) ###
+git commit -m “comentario” -a
+
+### MANDAR LOS CAMBIOS A GITHUB ###
+git push https://github.com/felixacdc/Practicas.git
