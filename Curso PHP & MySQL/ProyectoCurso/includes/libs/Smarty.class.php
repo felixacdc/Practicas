@@ -306,7 +306,7 @@ class Smarty extends Smarty_Internal_TemplateBase
      *
      * @var string
      */
-    private $compile_dir = './templates_c/';
+    private $compile_dir = './cache/';
 
     /**
      * plugins directory
@@ -749,23 +749,31 @@ class Smarty extends Smarty_Internal_TemplateBase
     /**
      * Initialize new Smarty object
      */
-    public function __construct()
+    public function __construct($parametro)
     {
         if (is_callable('mb_internal_encoding')) {
             mb_internal_encoding(Smarty::$_CHARSET);
         }
         $this->start_time = microtime(true);
         // check default dirs for overloading
-        if ($this->template_dir[0] !== './estilos/templates/' || isset($this->template_dir[1])) {
-            $this->setTemplateDir($this->template_dir);
+        // if ($this->template_dir[0] !== './estilos/templates/' || isset($this->template_dir[1])) {
+        //     $this->setTemplateDir($this->template_dir);
+        // }
+        if ($parametro == 0) {
+          $this->setTemplateDir($this->template_dir);
+          $this->setCompileDir($this->compile_dir);
+        } else {
+          $this->setTemplateDir('../estilos/templates/');
+          $this->setCompileDir('../cache/');
         }
+
         if ($this->config_dir[0] !== './configs/' || isset($this->config_dir[1])) {
             $this->setConfigDir($this->config_dir);
         }
-        if ($this->compile_dir !== './cache/') {
-            unset(self::$_muted_directories['./cache/']);
-            $this->setCompileDir($this->compile_dir);
-        }
+        // if ($this->compile_dir !== './cache/') {
+        //     unset(self::$_muted_directories['./cache/']);
+        //     $this->setCompileDir($this->compile_dir);
+        // }
         if ($this->cache_dir !== './cache/') {
             unset(self::$_muted_directories['./cache/']);
             $this->setCacheDir($this->cache_dir);

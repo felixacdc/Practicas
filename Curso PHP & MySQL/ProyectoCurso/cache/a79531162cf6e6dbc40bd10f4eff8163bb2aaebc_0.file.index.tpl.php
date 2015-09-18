@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-09-18 06:50:34
+<?php /* Smarty version 3.1.27, created on 2015-09-18 07:00:02
          compiled from "C:\xampp\htdocs\Practicas\Curso PHP & MySQL\ProyectoCurso\estilos\templates\public\index.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:1532955fb981a5f2e19_61450076%%*/
+/*%%SmartyHeaderCode:1562255fb9a5208cb83_21366047%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -13,7 +13,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1532955fb981a5f2e19_61450076',
+  'nocache_hash' => '1562255fb9a5208cb83_21366047',
   'variables' => 
   array (
     'variable' => 0,
@@ -21,13 +21,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_55fb981a62f827_54905236',
+  'unifunc' => 'content_55fb9a520c5111_06585860',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_55fb981a62f827_54905236')) {
-function content_55fb981a62f827_54905236 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_55fb9a520c5111_06585860')) {
+function content_55fb9a520c5111_06585860 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '1532955fb981a5f2e19_61450076';
+$_smarty_tpl->properties['nocache_hash'] = '1562255fb9a5208cb83_21366047';
 ?>
 <!DOCTYPE html>
 <html lang="en">

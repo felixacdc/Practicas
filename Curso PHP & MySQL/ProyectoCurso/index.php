@@ -3,7 +3,7 @@
 include 'includes/comunes.php';
 
 # crear objeto smarty
-$template = new Smarty();
+$template = new Smarty(0);
 
 $template->assign(array(
   'variable' => 'Hola todo bien',
