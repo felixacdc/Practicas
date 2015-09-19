@@ -1,6 +1,9 @@
 <?php 
 
 include 'includes/comunes.php';
+require 'includes/class.Conexion.php';
+
+$db = new Conexion();
 
 # crear objeto smarty
 $template = new Smarty(0);
