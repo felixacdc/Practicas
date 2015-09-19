@@ -8,6 +8,7 @@
 	<h1>Esto es Index.tpl</h1>
 	{for $x=0 to 19}
 	{$variable} - {$variable2} <br>
-	{/for}
+	{/for} <br>
+	áéíóú ñ
 </body>
 </html>
