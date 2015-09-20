@@ -20,6 +20,12 @@ class Conexion extends mysqli
 		unset($x);
 	}
 
+	public function recorrer($sql)
+	{
+		// mysqli_fetch_array crea un arreglo con los datos obtenidos en la consulta
+		return mysqli_fetch_array($sql);
+	}
+
 }
 
 
