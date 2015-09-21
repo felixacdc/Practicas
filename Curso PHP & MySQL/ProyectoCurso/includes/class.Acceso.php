@@ -33,7 +33,23 @@ class Acceso
 
 	public function registro()
 	{
+		$db = new Conexion();
+		$sql = $db->query("SELECT nombre, email FROM usuarios 
+					WHERE nombre='$this->user' OR email='$this->email'");
+		$datos = $db->recorrer($sql);
 
+		if (strtolower($datos['nombre']) != strtolower($this->user) and strtolower($datos['email']) != strtolower($this->email)) {
+			$sql = $db->query("INSERT INTO usuarios (nombre, password, email) VALUES ('$this->user','$this->pass','$this->email');");
+			session_start();
+			$_SESSION['user'] = $this->user;
+			header('location: acceso.php');
+		} elseif (strtolower($datos['nombre']) == strtolower($this->user) and strtolower($datos['email']) == strtolower($this->email)) {
+			header('location: index.php?modo=registro&error=usuarioyemail_usados');
+		} elseif (strtolower($datos['nombre']) == strtolower($this->user)) {
+			header('location: index.php?modo=registro&error=usuario_usado');
+		} elseif (strtolower($datos['email']) == strtolower($this->email)) {
+			header('location: index.php?modo=registro&error=email_usado');
+		}
 	}
 
 	public function clavePerdida()
