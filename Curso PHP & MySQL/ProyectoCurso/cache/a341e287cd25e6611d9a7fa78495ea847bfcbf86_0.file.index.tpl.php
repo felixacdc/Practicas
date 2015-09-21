@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-09-20 07:18:31
+<?php /* Smarty version 3.1.27, created on 2015-09-21 04:34:35
          compiled from "/opt/lampp/htdocs/Practicas/Curso PHP & MySQL/ProyectoCurso/estilos/templates/public/index.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:152327245055fe41a78c52d7_16654646%%*/
+/*%%SmartyHeaderCode:7906564355ff6cbb23c643_83956514%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,24 +9,24 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'a341e287cd25e6611d9a7fa78495ea847bfcbf86' => 
     array (
       0 => '/opt/lampp/htdocs/Practicas/Curso PHP & MySQL/ProyectoCurso/estilos/templates/public/index.tpl',
-      1 => 1442726300,
+      1 => 1442802870,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '152327245055fe41a78c52d7_16654646',
+  'nocache_hash' => '7906564355ff6cbb23c643_83956514',
   'variables' => 
   array (
     'error' => 0,
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_55fe41a79bf2a3_58525462',
+  'unifunc' => 'content_55ff6cbb3ea389_91017764',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_55fe41a79bf2a3_58525462')) {
-function content_55fe41a79bf2a3_58525462 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_55ff6cbb3ea389_91017764')) {
+function content_55ff6cbb3ea389_91017764 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '152327245055fe41a78c52d7_16654646';
+$_smarty_tpl->properties['nocache_hash'] = '7906564355ff6cbb23c643_83956514';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,10 +41,11 @@ $_smarty_tpl->properties['nocache_hash'] = '152327245055fe41a78c52d7_16654646';
 
 	<?php }?>
 	<form action="index.php?modo=login" method="POST">
-		<label>User: </label><input type="text" name="user">
-		<label>Password: </label><input type="password" name="pass">
+		<label>User: </label><input type="text" name="user"><br><br>
+		<label>Password: </label><input type="password" name="pass"><br><br>
 		<input type="hidden" name="login" value="1">
-		<input type="submit" value="Iniciar Sesion">
+		<a href="index.php?modo=registro">Registrarme</a><br><br>
+		<input type="submit" value="Iniciar Sesion"><br><br>
 	</form>
 </body>
 </html><?php }

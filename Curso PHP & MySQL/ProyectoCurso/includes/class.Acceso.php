@@ -4,11 +4,13 @@ class Acceso
 {
 	protected $user;
 	protected $pass;
+	protected $email;
 	
-	public function __construct($users, $passw)
+	public function __construct($users, $passw, $emaill)
 	{
 		$this->user = $users;
 		$this->pass = $passw;
+		$this->email = $emaill;
 	}
 
 	public function login() 

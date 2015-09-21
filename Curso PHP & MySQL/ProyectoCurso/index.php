@@ -11,7 +11,7 @@ switch ($modo) {
 		if (isset($_POST['login'])) {
 			if (!empty($_POST['user']) and !empty($_POST['pass'])) {
 				include 'includes/class.Acceso.php';
-				$login = new Acceso($_POST['user'], $_POST['pass']);
+				$login = new Acceso($_POST['user'], $_POST['pass'], '');
 				$login->login();
 			} else {
 				header('location: index.php?error=campos_vacios');
@@ -21,7 +21,18 @@ switch ($modo) {
 		}
 		break;
 	case 'registro':
-		echo 'Registro';
+		if (isset($_POST['Registro'])) {
+			if (!empty($_POST['user']) and !empty($_POST['email']) and !empty($_POST['pass'])) {
+				include 'includes/class.Acceso.php';
+				$registro = new Acceso($_POST['user'], $_POST['pass'], $_POST['email']);
+				$registro->registro();
+			} else {
+				header('location: index.php?modo=registro&error=campos_vacios');
+			}
+		} else {
+			$template = new Smarty(0);
+			$template->display('public/registro.tpl');
+		}
 		break;
 	case 'claveperdida':
 		echo 'Clave Perdida';
