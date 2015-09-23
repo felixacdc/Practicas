@@ -1,0 +1,8 @@
+htmlspecialchars // convierte los caracteres especiales en entidades html
+mysqli_real_escape_string // escapa las comillas simples
+
+en constructor:
+$this->user = htmlscapecialchars($parametrousuario);
+
+en la funcion:
+$user = $db->mysqli_real_escape_string($this->user);
