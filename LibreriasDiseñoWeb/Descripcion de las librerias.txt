@@ -1,0 +1,14 @@
+================= HTML5 SHIV ======================
+HTML5 Shiv es una solución JavaScript descubierta por Sjoerd Visscher, para permitir dar estilo a los elementos de HTML5 en las versiones de Internet Explorer anteriores a la versión 9.
+Es una libreria de javascript que se incluye la pagina web o se llama de la siguiente forma:
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+================= Jqury Isotope ======================
+nos ayudaran a crear portafolios filtrables o mostrar contenidos de forma dinámica.
+Es un plugin que se descarga y se utiliza incluyendo el archivo en el html con una etiqueta style
+
+================= Jqury Inview ======================
+Evento que se dispara tan pronto como elemento aparece en la ventana gráfica del usuario.
+Es un plugin que se descarga y se utiliza incluyendo el archivo en el html con una etiqueta style
