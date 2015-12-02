@@ -29,3 +29,15 @@ git commit -m “comentario” -a
 
 ### MANDAR LOS CAMBIOS A GITHUB ###
 git push https://github.com/felixacdc/Practicas.git
+
+### CREAR UN NUEVO BRANCH
+git branch <nombre>
+
+### INGRESAR A UN BRANCH
+git checkout <nombre>
+
+### ACTUALIZAR BRANCH PRINCIPAL
+git merge master
+
+### DESHACER MODIFICACIONES EN UN ARCHIVO
+git checkout -- <direccion y nombre del archivo>
