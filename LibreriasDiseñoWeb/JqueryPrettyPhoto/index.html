@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pretty Photo</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+</head>
+<body>
+    <a href="images/fullscreen/1.jpg" rel="prettyPhoto[pp_gal]" title="You can add caption to pictures."><img src="images/thumbnails/t_1.jpg" width="60" height="60" alt="Red round shape" /></a>
+
+    <a href="images/fullscreen/2.jpg" rel="prettyPhoto[pp_gal]"><img src="images/thumbnails/t_2.jpg" width="60" height="60" alt="Nice building" /></a>
+
+    <a href="images/fullscreen/3.jpg" rel="prettyPhoto[pp_gal]"><img src="images/thumbnails/t_3.jpg" width="60" height="60" alt="Fire!" /></a>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("a[rel^='prettyPhoto']").prettyPhoto();
+        })
+    </script>
+</body>
+</html>
