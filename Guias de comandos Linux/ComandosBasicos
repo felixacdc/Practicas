@@ -3,5 +3,5 @@ pwd => ver la uvicacion actual
 cd => lleva a directorio rais
 touch nombreyextencioncion => crear un archivo
 nombreprograma -v => muestra la vercion del programa
-
+chmod 777 -R GitHub/* => darle permisos a todos los archivos de una carpeta
 
