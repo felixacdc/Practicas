@@ -12,9 +12,9 @@
   <div id="login">
     <div id="triangle"></div>
     <h1>Log in</h1>
-    <form>
-      <input type="email" placeholder="Email" />
-      <input type="password" placeholder="Password" />
+    <form action="includes/callUsers.php" method="post" enctype="multipart/form-data">
+      <input type="email" placeholder="Email" name="email"/>
+      <input type="password" placeholder="Password" name="password"/>
       <input type="submit" value="Log in" />
     </form>
   </div>
