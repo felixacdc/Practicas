@@ -14,6 +14,7 @@
 		<label>Password: </label><input type="password" name="pass"><br><br>
 		<input type="hidden" name="login" value="1">
 		<a href="index.php?modo=registro">Registrarme</a><br><br>
+		<a href="index.php?modo=claveperdida">Recuperar Contraseña</a><br><br>
 		<input type="submit" value="Iniciar Sesion"><br><br>
 	</form>
 </body>

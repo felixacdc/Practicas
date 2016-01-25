@@ -1,11 +1,11 @@
-<?php 
+<?php
 
 include 'includes/comunes.php';
 require 'includes/class.Conexion.php';
 
 
 $modo = isset($_GET['modo']) ? $_GET['modo'] : 'default';
-	
+
 switch ($modo) {
 	case 'login':
 		if (isset($_POST['login'])) {
@@ -51,15 +51,40 @@ switch ($modo) {
 		}
 		break;
 	case 'claveperdida':
-		echo 'Clave Perdida';
+		$template = new Smarty(0);
+
+		if (isset($_POST['email'])) {
+
+			if ( ! empty($_POST['email']) ) {
+				include 'includes/class.Acceso.php';
+				$recuperar = new Acceso('', '', $_POST['email']);
+				$recuperar->clavePerdida();
+			} else {
+				header('location: index.php?modo=claveperdida&error=campos_vacios');
+			}
+
+		} elseif (isset($_GET['error']) and $_GET['error'] == 'campos_vacios') {
+			$template->assign(array('error' => 'ERROR: Debes llenar el campo.'));
+			$template->display('public/claveperdida.tpl');
+		} elseif (isset($_GET['error']) and $_GET['error'] == 'email_inexistente') {
+			$template->assign(array('error' => 'ERROR: Email no existe.'));
+			$template->display('public/claveperdida.tpl');
+		} elseif (isset($_GET['success']) and $_GET['success'] == 'ok') {
+			$template->assign(array('error' => 'Te hemos enviado tu nueva contraseña.'));
+			$template->display('public/claveperdida.tpl');
+		} else {
+			$template->display('public/claveperdida.tpl');
+		}
+
+
 		break;
 	default:
 		$template = new Smarty(0);
-		if (isset($_GET['error']) and $_GET['error'] == 'campos_vacios') {		
+		if (isset($_GET['error']) and $_GET['error'] == 'campos_vacios') {
 			$template->assign(array('error' => 'ERROR: Debes llenar los campos.'));
 			$template->display('public/index.tpl');
 		} elseif (isset($_GET['error']) and $_GET['error'] == 'datos_incorrectos') {
-			$template->assign(array('error' => 'ERROR: Datos Incorrectos.'));
+			$template->assign(array('error' => 'ERROR: Datos Incorrectos, ¿has olvidado tu cuenta? <a href="index.php?modo=claveperdida">Recuperala</a>'));
 			$template->display('public/index.tpl');
 		}elseif (isset($_GET['error']) and $_GET['error'] == 'acceso') {
 			$template->assign(array('error' => 'ERROR: La sesion ha caducado o no has iniciado secion.'));
