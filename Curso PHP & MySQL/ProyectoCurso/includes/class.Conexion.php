@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-class Conexion extends mysqli 
+class Conexion extends mysqli
 {
 
 	private $servidor = 'localhost';
@@ -8,7 +8,7 @@ class Conexion extends mysqli
 	private $user = 'root';
 	private $password = '';
 
-	public function __construct() 
+	public function __construct()
 	{
 		//acceder al constructor de mysqli
 		parent::__construct($this->servidor, $this->user, $this->password, $this->db);
@@ -24,6 +24,11 @@ class Conexion extends mysqli
 	{
 		// mysqli_fetch_array crea un arreglo con los datos obtenidos en la consulta
 		return mysqli_fetch_array($sql);
+	}
+
+	public function rows($y)
+	{
+		return mysqli_num_rows($y);
 	}
 
 }

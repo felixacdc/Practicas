@@ -8,22 +8,20 @@ class Acceso
 
 	public function __construct($users, $passw, $emaill)
 	{
-		$this->user = $users;
-		$this->pass = $passw;
-		$this->email = $emaill;
+		$this->user = mysqli_real_escape_string(htmlspecialchars($users));
+		$this->pass = mysqli_real_escape_string(htmlspecialchars($passw));
+		$this->email = mysqli_real_escape_string(htmlspecialchars($emaill));
 	}
 
 	public function login()
 	{
 		$db = new Conexion();
 		$sql = $db->query("SELECT nombre, password FROM usuarios
-					WHERE nombre='$this->user' OR password='$this->pass'");
-		$datos = $db->recorrer($sql);
+					WHERE nombre='$this->user' AND password='$this->pass'");
 
-		// strtolower combierte el contenido de una variable string a minusculas
-		if (strtolower($datos['nombre']) == strtolower($this->user) and $datos['password'] == $this->pass ) {
+		if ( $db->rows($sql) > 0 ) {
 			session_start();
-			$_SESSION['user'] = $datos['nombre'];
+			$_SESSION['user'] = $this->user;
 			header('location: acceso.php');
 		} else {
 			header('location: index.php?error=datos_incorrectos');
@@ -38,7 +36,7 @@ class Acceso
 					WHERE nombre='$this->user' OR email='$this->email'");
 		$datos = $db->recorrer($sql);
 
-		if (strtolower($datos['nombre']) != strtolower($this->user) and strtolower($datos['email']) != strtolower($this->email)) {
+		if ( $db->rows($sql) == 0 ) {
 			$sql = $db->query("INSERT INTO usuarios (nombre, password, email) VALUES ('$this->user','$this->pass','$this->email');");
 			session_start();
 			$_SESSION['user'] = $this->user;
@@ -59,9 +57,7 @@ class Acceso
 		$sql = $db->query("SELECT email FROM usuarios
 					WHERE email='$this->email'");
 
-		$datos = $db->recorrer($sql);
-
-		if (strtolower($datos['email']) == strtolower($this->email)) {
+		if ( $db->rows($sql) > 0 ) {
 			#Generamos la contraseña y la enviamos al correo del usuario
 			include('includes/class.GenerarPass.php');
 
