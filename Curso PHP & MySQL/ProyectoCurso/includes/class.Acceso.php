@@ -8,16 +8,20 @@ class Acceso
 
 	public function __construct($users, $passw, $emaill)
 	{
-		$this->user = mysqli_real_escape_string(htmlspecialchars($users));
-		$this->pass = mysqli_real_escape_string(htmlspecialchars($passw));
-		$this->email = mysqli_real_escape_string(htmlspecialchars($emaill));
+		$this->user = htmlspecialchars($users);
+		$this->pass = htmlspecialchars($passw);
+		$this->email = htmlspecialchars($emaill);
 	}
 
 	public function login()
 	{
 		$db = new Conexion();
+
+		$user = $db->real_escape_string($this->user);
+		$pass = $db->real_escape_string($this->pass);
+
 		$sql = $db->query("SELECT nombre, password FROM usuarios
-					WHERE nombre='$this->user' AND password='$this->pass'");
+					WHERE nombre='$user' AND password='$pass'");
 
 		if ( $db->rows($sql) > 0 ) {
 			session_start();
@@ -32,12 +36,17 @@ class Acceso
 	public function registro()
 	{
 		$db = new Conexion();
+
+		$user = $db->real_escape_string($this->user);
+		$pass = $db->real_escape_string($this->pass);
+		$email = $db->real_escape_string($this->email);
+
 		$sql = $db->query("SELECT nombre, email FROM usuarios
-					WHERE nombre='$this->user' OR email='$this->email'");
+					WHERE nombre='$user' OR email='$email'");
 		$datos = $db->recorrer($sql);
 
 		if ( $db->rows($sql) == 0 ) {
-			$sql = $db->query("INSERT INTO usuarios (nombre, password, email) VALUES ('$this->user','$this->pass','$this->email');");
+			$sql = $db->query("INSERT INTO usuarios (nombre, password, email) VALUES ('$user','$pass','$email');");
 			session_start();
 			$_SESSION['user'] = $this->user;
 			header('location: acceso.php');
@@ -54,8 +63,10 @@ class Acceso
 	{
 		$db = new Conexion();
 
+		$email = $db->real_escape_string($this->email);
+
 		$sql = $db->query("SELECT email FROM usuarios
-					WHERE email='$this->email'");
+					WHERE email='$email'");
 
 		if ( $db->rows($sql) > 0 ) {
 			#Generamos la contraseña y la enviamos al correo del usuario
@@ -66,7 +77,7 @@ class Acceso
 
 			$sql = $db->query("UPDATE usuarios
 												SET password = '$passwordFinal'
-												WHERE email='$this->email'");
+												WHERE email='$email'");
 
 			mail($this->email, 'Cambio de contraseña', "Estimado Usuario tu nueva contraseña es: $passwordFinal");
 
