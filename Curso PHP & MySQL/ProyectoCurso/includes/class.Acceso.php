@@ -18,7 +18,7 @@ class Acceso
 		$db = new Conexion();
 
 		$user = $db->real_escape_string($this->user);
-		$pass = $db->real_escape_string($this->pass);
+		$pass = sha1($db->real_escape_string($this->pass));
 
 		$sql = $db->query("SELECT nombre, password FROM usuarios
 					WHERE nombre='$user' AND password='$pass'");
@@ -38,7 +38,7 @@ class Acceso
 		$db = new Conexion();
 
 		$user = $db->real_escape_string($this->user);
-		$pass = $db->real_escape_string($this->pass);
+		$pass = sha1($db->real_escape_string($this->pass));
 		$email = $db->real_escape_string($this->email);
 
 		$sql = $db->query("SELECT nombre, email FROM usuarios
@@ -74,12 +74,14 @@ class Acceso
 
 			$password = new GenerarPass();
 			$passwordFinal = $password->NuevoPassword(11);
+			$pass = $passwordFinal;
+			$passwordFinal = sha1($passwordFinal);
 
 			$sql = $db->query("UPDATE usuarios
 												SET password = '$passwordFinal'
 												WHERE email='$email'");
 
-			mail($this->email, 'Cambio de contraseña', "Estimado Usuario tu nueva contraseña es: $passwordFinal");
+			mail($this->email, 'Cambio de contraseña', "Estimado Usuario tu nueva contraseña es: $pass");
 
 			header('location: index.php?modo=claveperdida&success=ok');
 

@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(0);
+
 include 'includes/comunes.php';
 require 'includes/class.Conexion.php';
 
