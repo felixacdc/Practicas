@@ -12,6 +12,15 @@ git config --global user.email "you@example.com"
 ### AGREGAR NOMBRE DE USUARIO GITHUB GLOBAL ###
 git config --global user.name "your name"
 
+############ CREAR REPOSITORIO DESDE PC ################
+echo "# Curso-de-PHP-Avanzado---PHP-POO-MySQL-MVC-AJA" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/felixacdc/Curso-de-PHP-Avanzado---PHP-POO-MySQL-MVC-AJA.git
+git push -u origin master
+#############################################################
+
 ### CLONAR UN REPOSITORIO ###
 git clone https://github.com/felixacdc/Practicas.git
 
