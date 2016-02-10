@@ -8,6 +8,8 @@ lessc nombre.less nombre.css
 
 compilar less comprimido:
 lessc -x nombre.less nombre.css
+** Para compilar less hay que instalar Less Plugin Clean CSS
+npm install -g less-plugin-clean-css
 
 aplicar less a sintaxis de sublime:
 1)ctr+shif+p
